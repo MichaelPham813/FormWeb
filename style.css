@@ -1,0 +1,32 @@
+:root
+{
+    --default-width:100%;
+    --default-height:100%;
+    --default-background-color: rgba(0,0,0,0.5);
+    --default-text-color:rgb(255,255,255);
+}
+
+.background
+{
+    position:relative;
+}
+
+.background-img
+{
+    width:var(--default-width);
+    height:var(--default-height);
+}
+.text-background
+{
+    position:absolute;
+    top:25%;
+    text-align: center;
+    width:var(--default-width);
+    background-color: var(--default-background-color);
+}
+.logo-text
+{
+    color:var(--default-text-color);
+    font-weight:200px;
+    font-size: 30px;
+}
