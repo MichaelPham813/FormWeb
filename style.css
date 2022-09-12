@@ -3,12 +3,37 @@
     --default-width:100%;
     --default-height:100%;
     --default-background-color: rgba(0,0,0,0.5);
+    --default-background-body-color: rgb(0,0,0);
     --default-text-color:rgb(255,255,255);
+    --form-background-color:rgb(255,255,255);
+    --default-font: 'GFS Didot';
+}
+
+*
+{
+    font-family: var(--default-font);
+}
+
+body
+{
+    background-color: var(--default-background-body-color);
+}
+
+a
+{
+    color: var(--default-text-color);
+}
+
+label
+{
+    text-transform:uppercase;
+    font-size:12px;
 }
 
 .background
 {
     position:relative;
+    flex: 1 1 0;
 }
 
 .background-img
@@ -16,6 +41,7 @@
     width:var(--default-width);
     height:var(--default-height);
 }
+
 .text-background
 {
     position:absolute;
@@ -24,9 +50,67 @@
     width:var(--default-width);
     background-color: var(--default-background-color);
 }
+
 .logo-text
 {
     color:var(--default-text-color);
     font-weight:200px;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.footer-text-holder
+{
+    position: absolute;
+    color:var(--default-text-color);
+    bottom:10px;
+    text-align: center;
+    width: var(--default-width);
+}
+
+.banner-background
+{
+    display:flex;
+    width: var(--default-width);
+    height: var(--default-height);
+    justify-content: center;
+    align-items: center;
+    margin:50px 0px;
+}
+
+.box-holder
+{
+    display:flex;
+    width:var(--default-width);
+    height:var(--default-height);
+    margin:10px;
+}
+
+.form
+{
+    display:flex;
+    flex-direction: column;
+    flex: 2 1 0;
+    background-color: var(--form-background-color);
+    gap:10px;
+}
+
+.form-holder
+{
+    margin:20px;
+}
+
+.text-form-intro
+{
+    font-size: 15px;
+}
+.form-area
+{
+    margin:20px;
+}
+.fill-out-form
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px 40px;
 }
