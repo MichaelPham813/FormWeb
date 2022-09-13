@@ -5,6 +5,7 @@
     --default-background-color: rgba(0,0,0,0.5);
     --default-background-body-color: rgb(0,0,0);
     --default-text-color:rgb(255,255,255);
+    --default-form-color:rgb(245, 245, 245);
     --form-background-color:rgb(255,255,255);
     --default-font: 'GFS Didot';
 }
@@ -90,13 +91,13 @@ label
     display:flex;
     flex-direction: column;
     flex: 2 1 0;
-    background-color: var(--form-background-color);
+    background-color: var(--default-form-color);
     gap:10px;
 }
 
 .form-holder
 {
-    margin:20px;
+    margin:100px 20px 20px 20px;
 }
 
 .text-form-intro
@@ -105,12 +106,74 @@ label
 }
 .form-area
 {
-    margin:20px;
+    padding:20px 280px 20px 20px;
+    background-color:var(--form-background-color);
+    box-shadow: 4px 3px 5px 0.25px rgba(0,0,0,0.15);
+    
 }
 .fill-out-form
 {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:10px 40px;
+    gap:10px 30px;
+
+}
+.input-box
+{
+    border-style: solid;
+    border-width:thin;
+    border-radius: 3px;
+    background-color: var(--default-form-color);
+}
+
+.input-box:focus
+{
+    outline:none !important;
+    border:1px solid #007FFF;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.create-form
+{
+    margin: 20px;
+}
+.create-button
+{
+    border-style: none;
+    border-width:thin;
+    border-radius: 3px;
+    padding:5px 25px;
+    background-color: #007FFF;
+    color:white;
+    box-shadow: 2px 2px 5px 0.25px rgba(0,0,0,0.25);
+}
+
+.create-button:hover
+{
+    cursor:pointer;
+}
+
+@media screen and (max-width:1030px)
+{
+    .form-area
+    {
+        padding:20px 120px 20px 20px;
+    }    
+}
+
+@media screen and (max-width:1024px) 
+{
+    .form-area
+    {
+        padding:20px 120px 20px 20px;
+    }
+}
+
+@media screen and (max-width:771px)
+{
+    .form-area
+    {
+        padding:20px 50px 20px 20px;
+    }
 }
