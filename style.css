@@ -17,12 +17,33 @@
 
 body
 {
+    margin:0px;
     background-color: var(--default-background-body-color);
 }
 
 a
 {
+    text-decoration: none;
+}
+
+.text-background
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.credit-text
+{
     color: var(--default-text-color);
+    text-decoration: underline;
+}
+
+.logo
+{
+    width:10%;
+    height:10%;
 }
 
 label
@@ -73,9 +94,8 @@ label
     display:flex;
     width: var(--default-width);
     height: var(--default-height);
-    justify-content: center;
-    align-items: center;
-    margin:50px 0px;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .box-holder
@@ -83,7 +103,7 @@ label
     display:flex;
     width:var(--default-width);
     height:var(--default-height);
-    margin:10px;
+    margin:0px 120px;
 }
 
 .form
@@ -97,7 +117,7 @@ label
 
 .form-holder
 {
-    margin:100px 20px 20px 20px;
+    margin:100px 20px 20px 40px;
 }
 
 .text-form-intro
@@ -106,7 +126,7 @@ label
 }
 .form-area
 {
-    padding:20px 280px 20px 20px;
+    padding:20px 280px 20px 40px;
     background-color:var(--form-background-color);
     box-shadow: 4px 3px 5px 0.25px rgba(0,0,0,0.15);
     
@@ -136,7 +156,7 @@ label
 
 .create-form
 {
-    margin: 20px;
+    margin: 20px 0px 0px 40px;
 }
 .create-button
 {
@@ -154,11 +174,23 @@ label
     cursor:pointer;
 }
 
+.signin-btn
+{
+    margin:10px 40px 74.5px 40px;
+
+}
+
+.log-in-button:-webkit-any-link
+{
+    color:#007FFF;
+    text-decoration: none !important;
+}
+
 @media screen and (max-width:1030px)
 {
     .form-area
     {
-        padding:20px 120px 20px 20px;
+        padding:20px 120px 20px 40px;
     }    
 }
 
@@ -166,7 +198,7 @@ label
 {
     .form-area
     {
-        padding:20px 120px 20px 20px;
+        padding:20px 120px 20px 40px;
     }
 }
 
@@ -174,6 +206,6 @@ label
 {
     .form-area
     {
-        padding:20px 50px 20px 20px;
+        padding:20px 50px 20px 40px;
     }
 }

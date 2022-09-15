@@ -14,13 +14,14 @@
             <div class = "background">
                 <img class = "background-img" src="./img/nicholas-ledoux-uY4Od-XJAY0-unsplash.jpg" alt="background">
                 <div class = "text-background">
+                    <img class = "logo" src="./img/odin-lined.png" alt="">
                     <p class = "logo-text" >
-                        Something
+                        Stoicism
                     </p>
                 </div>
                 <div class = "footer-text-holder">
                     <p class = "footer-text-background">
-                        Photo by <a href="https://unsplash.com/photos/uY4Od-XJAY0">Nicholas Ledoux</a> on <a href="https://unsplash.com/">Unsplash</a>
+                        Photo by <a class = "credit-text" href="https://unsplash.com/photos/uY4Od-XJAY0">Nicholas Ledoux</a> on <a class = "credit-text" href="https://unsplash.com/">Unsplash</a>
                     </p>
                 </div>
             </div>
@@ -33,11 +34,12 @@
                         </p>                  
                     </div>
                 </div>
-                <div class="form-area">
+                <form action="#">
+                    <div class="form-area">
                     <p>
                         Stoicism
                     </p>
-                    <form action="#" method ="post">
+                   
                         <div class="fill-out-form">
                             <div class="fill-out-box">
                                 <label for="first_name">First Name</label>
@@ -70,13 +72,18 @@
                                 <input class = "input-box" type="password" id = "password_confirm" placeholder="" required>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="create-form">
-                    <input type="button" class="create-button" value = "Create account">
-                </div>
+                    </div>
+                    <div class="create-form">
+                        <button type = "submit" class="create-button" value = "Create account" onclick="checkPassword()">Create account</button>
+                    </div>
+                </form>
+                <p class="signin-btn">
+                    Already have an account? <a class = "log-in-btn"  href="#">Log in</a>
+                </p>
             </div>
         </div>
     </div>
+<script src = "script.js"></script>
 </body>
+
 </html>
